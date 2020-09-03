@@ -31,4 +31,3 @@ class ProductionConfig(BaseConfig):
 class StagingConfig(BaseConfig):
     DEVELOPMENT = True
     DEBUG = True
-
