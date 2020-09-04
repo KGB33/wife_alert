@@ -8,6 +8,11 @@ wife without startling her.
 
 ## via Docker
 
+Note:
+  > To access the GPIO pins Docker needs access to the `/dev/gpiomem` device.
+  > Start the container with the following flag: `--device /dev/gpiomem`.
+  > For more information see this [stackoverflow](https://stackoverflow.com/questions/30059784/docker-access-to-raspberry-pi-gpio-pins) post
+
 ## via Source
 
 ### Requirments
