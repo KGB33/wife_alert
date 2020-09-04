@@ -1,6 +1,6 @@
 from flask import current_app, render_template
 
-from . import ASYNC_LOOP
+from . import queue
 from .forms import ButtonForm
 from . import gpio
 
@@ -12,5 +12,5 @@ def index():
     """
     form = ButtonForm()
     if form.validate_on_submit():
-        ASYNC_LOOP.run_until_complete(gpio.make_blink())
+        queue.enqueue("hannah_light.gpio.make_blink")
     return render_template("index.html", form=form)

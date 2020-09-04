@@ -1,12 +1,11 @@
 """
 Controls the GIPO pins on the RaspberryPi
+by sending functions to a redis task queue
 """
-import asyncio
-
-from time import time
+import time
 
 
-async def make_blink():
+def make_blink():
     for _ in range(5):
-        print("---BLINK---", time())
-        await asyncio.sleep(0.5)
+        print("---BLINK---", time.time())
+        time.sleep(0.5)

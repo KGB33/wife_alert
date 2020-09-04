@@ -5,8 +5,11 @@ import asyncio
 
 from flask import Flask
 from flask_bootstrap import Bootstrap
+from redis import Redis
+import rq
 
-ASYNC_LOOP = asyncio.get_event_loop()
+
+queue = rq.Queue("flashing_LED", connection=Redis.from_url("redis://"))
 
 
 def create_app(config=os.environ["APP_CONFIG"]):
