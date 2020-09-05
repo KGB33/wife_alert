@@ -21,3 +21,5 @@ Note:
   * Poetry
 
 # Wireings
+
+[circut diagram](!./img/circuit.svg)
