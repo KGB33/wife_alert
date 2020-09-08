@@ -22,4 +22,4 @@ Note:
 
 # Wireings
 
-[circut diagram](!./img/circuit.svg)
+![circut diagram](/img/circuit.svg)
