@@ -10,6 +10,8 @@ wife without startling her.
 
 ## via Docker
 
+Run `docker run ghcr.io/kgb33/wife_alert:latest --device /dev/gpiomem`
+
 Note:
   > To access the GPIO pins Docker needs access to the `/dev/gpiomem` device.
   > Start the container with the following flag: `--device /dev/gpiomem`.
