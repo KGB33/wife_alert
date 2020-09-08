@@ -12,5 +12,5 @@ def index():
     """
     form = ButtonForm()
     if form.validate_on_submit():
-        queue.enqueue("hannah_light.gpio.make_blink")
+        queue.enqueue("wife_alert.gpio.make_blink")
     return render_template("index.html", form=form)
