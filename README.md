@@ -1,6 +1,8 @@
 # Wife Alert
 
-	A simple Flask app used to send commands to a RaspberryPi.
+_A simple Flask app used to send commands to a RaspberryPi._
+
+
 These commands activate various electonics on the Pi to alert the
 wife without startling her.
 
